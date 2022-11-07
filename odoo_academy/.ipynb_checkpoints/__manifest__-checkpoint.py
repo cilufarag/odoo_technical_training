@@ -11,7 +11,7 @@
     """,
     'author': 'Carlos Garafulic',
     'website': 'https://www.clingdata.com',
-    'licence': 'LGPL-3',
+    'license': 'LGPL-3',
     'category': 'Training',
     'version': '0.1.0',
     'depends': ['base'],
