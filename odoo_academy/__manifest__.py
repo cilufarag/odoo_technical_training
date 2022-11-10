@@ -15,6 +15,8 @@
     'category': 'Training',
     'version': '0.1.0',
     'depends': ['base'],
-    'data': [],
+    'data': ['security/academy_security.xml', 
+             'security/ir.model.access.csv',
+             'views/academy_menu_items.xml'],
     'demo': []
 }
