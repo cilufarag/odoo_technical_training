@@ -18,5 +18,5 @@
     'data': ['security/academy_security.xml', 
              'security/ir.model.access.csv',
              'views/academy_menu_items.xml'],
-    'demo': []
+    'demo': ['demo/academy_demo.xml']
 }
