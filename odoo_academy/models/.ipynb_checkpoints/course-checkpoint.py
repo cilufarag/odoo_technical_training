@@ -15,14 +15,14 @@ class Course(models.Model):
     additional_fee = fields.Float(string='Additional Fee', default=10.00)
     total_price = fields.Float(string='Total Price', readonly=True)
     
-    @api.onchange(base_price, additional_fee)
+    @api.onchange('base_price', 'additional_fee')
     def _onchange_total_price(self):
         if self.base_price < 0:
             raise UserError_('Base price cannot be set as negative')
         
         self.total_price = self.base_price + self.additional_fee
         
-    @api.constrains(additional_fee)
+    @api.constrains('additional_fee')
     def _check_additional_fee(self):
         for record in self:
             if record.additional_fee < 10:
